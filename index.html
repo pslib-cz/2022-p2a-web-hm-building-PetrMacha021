@@ -2,6 +2,8 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HM Building.cz | Domov</title>
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/main.css">
@@ -18,13 +20,13 @@
           <div class="hamburger--item hamburger__item--3"></div>
         </div>
       </div>
-      <div class="menu menu--hidden">
-        <a href="index.html" class="menu__item menu__item--active">Domů</a>
-        <a href="index.html" class="menu__item">Služby</a>
-        <a href="reference.html" class="menu__item">Reference</a>
-        <a href="onas.html" class="menu__item">O nás</a>
-        <a href="kontakt.html" class="menu__item">Kontakt</a>
-      </div>
+      <menu class="menu menu--hidden">
+        <li class="menu__item"><a href="index.html">Domů</a></li>
+        <li class="menu__item"><a href="index.html">Služby</a></li>
+        <li class="menu__item menu__item--active"><a href="./sites/reference.html">Reference</a></li>
+        <li class="menu__item"><a href="./sites/onas.html">O nás</a></li>
+        <li class="menu__item"><a href="./sites/kontakt.html">Kontakt</a></li>
+      </menu>
     </nav>
     <div class="heading">
       <h1 class="heading--1">HM Building.cz s.r.o. <span class="subheading">liberecká stavební společnost</span></h1>
@@ -41,7 +43,7 @@
         <p class="heading--2">Novostavby</p>
         <p>Dle požadavků investora jsme schopní dodat <strong>kompletní stavbu na klíč</strong>, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.</p>
         <p>Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
-        <a href="novostavby.html" class="article__button">Zobrazit vice</a>
+        <a href="sites/services/novostavby.html" class="article__button">Zobrazit vice</a>
       </div>
     </article>
     <article>
@@ -49,7 +51,7 @@
       <div>
         <p class="heading--2">Průmyslové stavby</p>
         <p>Realizujeme <strong>průmyslové objekty ocelové konstrukce</strong>, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím se <strong>dostáváme na přijatelné ceny</strong>.</p>
-        <a href="novostavby.html" class="article__button">Zobrazit vice</a>
+        <a href="sites/services/novostavby.html" class="article__button">Zobrazit vice</a>
       </div>
     </article>
     <article>
@@ -57,7 +59,7 @@
       <div>
         <p class="heading--2">Rekonstrukce domů a jiných staveb</p>
         <p>Provádíme veškeré práce spojené s <strong>rekonstrukcí stávajících objektů</strong>. Pro naše klienty zajišťujeme dodatečné izolování objektů, <strong>zateplení objektů</strong>, změnu vnitřních i vnějších dispozic stávajících objektů a demolice stávajících staveb. </p>
-        <a href="novostavby.html" class="article__button">Zobrazit vice</a>
+        <a href="sites/services/novostavby.html" class="article__button">Zobrazit vice</a>
       </div>
     </article>
     <article>
@@ -65,14 +67,14 @@
       <div>
         <p class="heading--2">Komunikace a zpevněné plochy</p>
         <p>Komunikace a zpevněné plochy provádíme včetně <strong>zemních prací, konstrukcí podkladních</strong> a souvisejících objektů, jako jsou <strong>odvodnění, zpevnění svahů, opěrné zdi</strong> atd.</p>
-        <a href="novostavby.html" class="article__button">Zobrazit vice</a>
+        <a href="sites/services/novostavby.html" class="article__button">Zobrazit vice</a>
       </div>
     </article>
   </section>
   <div class="construction construction__background">
     <p class="construction__text">Naše firma nabízí své služby ve stavebnictví od roku 2015.</p>
     <p class="construction__text">Za kvalitu naší práce ručíme.</p>
-    <a href="kontakt.html" class="construction__button">Přesvědčit se</a>
+    <a href="sites/kontakt.html" class="construction__button">Přesvědčit se</a>
   </div>
   <section class="grid padding--1">
     <article>
@@ -103,13 +105,13 @@
       </div>
     </article>
     <div class="reference__button--align">
-      <a href="reference.html" class="reference__button">Více referencí</a>
+      <a href="sites/reference.html" class="reference__button">Více referencí</a>
     </div>
   </section>
 <footer class="footer">
   <p class="footer__heading">Plácneme si pro Váš projekt?</p>
   <p class="footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-  <div><a class="footer__button" href="kontakt.html">Nezávazně poptat</a></div>
+  <div><a class="footer__button" href="sites/kontakt.html">Nezávazně poptat</a></div>
 </footer>
 <script src="script/menu.js"></script>
 </body>

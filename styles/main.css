@@ -85,6 +85,10 @@ p {
     font-size: 1.2em;
 }
 
+.menu__text::marker {
+    color: var(--primary);
+}
+
 .menu__item--active {
     font-weight: 700;
 }
@@ -269,37 +273,22 @@ p {
     display: grid;
     gap: 1.5em;
     margin: 2em 0;
+    list-style: none;
 }
 
-.information__item {
+.information__text {
     color: var(--primary);
     text-decoration: none;
     font-weight: 700;
     font-size: .9em;
 }
 
-.information__telephone::before {
-    background: var(--primary);
-    border-radius: 50%;
-    padding: .5em;
-    margin-right: 1em;
-    content: "📞";
-}
-
-.information__email::before {
-    background: var(--primary);
-    border-radius: 50%;
-    padding: .5em;
-    margin-right: 1em;
-    content: "📧";
-}
-
-.information__address::before {
-    background: var(--primary);
-    border-radius: 50%;
-    padding: .5em;
-    margin-right: 1em;
-    content: "📍";
+.information__icon {
+    border-radius: 100%;
+    width: 2em;
+    height: 2em;
+    background-color: var(--primary);
+    box-sizing: content-box;
 }
 
 .image__address {
