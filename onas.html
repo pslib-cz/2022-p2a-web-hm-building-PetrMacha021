@@ -2,49 +2,49 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <title>HM Building.cz</title>
+  <title>HM Building.cz | O nas</title>
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-<nav>
-  <img class="nav__logo" src="./images/logo.png" alt="Logo">
-  <div class="nav__menu">
-    <span>MENU</span>
-    <div class="menu__hamburger">
-      <div class="menu__hamburger--item hamburger__item--1"></div>
-      <div class="menu__hamburger--item hamburger__item--2"></div>
-      <div class="menu__hamburger--item hamburger__item--3"></div>
+<header>
+  <nav class="navigation background__white">
+    <img class="navigation__logo" src="./images/logo.png" alt="Logo">
+    <div class="navigation__hamburger">
+      <span>MENU</span>
+      <div class="navigation__hamburger">
+        <div class="hamburger--item hamburger__item--1"></div>
+        <div class="hamburger--item hamburger__item--2"></div>
+        <div class="hamburger--item hamburger__item--3"></div>
+      </div>
     </div>
-  </div>
-  <div class="menu">
-    <a href="index.html" class="menu__item">Domů</a>
-    <a href="index.html" class="menu__item">Služby</a>
-    <a href="reference.html" class="menu__item">Reference</a>
-    <a href="onas.html" class="menu__item">O nás</a>
-    <a href="kontakt.html" class="menu__item">Kontakt</a>
-  </div>
-</nav>
-<main>
-  <article>
-    <h1>O nás</h1>
-    <p>Společnost <strong>HM Building.cz s.r.o.</strong> nabízí své <strong>služby ve stavebnictví od roku 2015</strong>, a to převážně <strong>po Libereckém kraji</strong>.</p>
-    <p>V oboru pozemního stavitelství <strong>provádíme stavbu a rekonstrukci</strong>:</p>
-    <ul>
-      <li>průmyslových staveb</li>
-      <li>obytných staveb</li>
-      <li>staveb občanské vybavenosti</li>
-      <li>komunikací vozidlových, ale i pěších</li>
-    </ul>
-    <p>Zakázky můžeme řešit tzv. <strong>na klíč</strong>, kde jsme schopni zajistit dodávky a montáž elektro-instalace NN a VN, zdravotně – technické instalace, ústředního vytápění, vzduchotechniky, MaR, případně jsme schopni, po dohodě s investorem, dodat pouze některou ucelenou část celkové zakázky.</p>
-    <p>Naše firma taktéž zajišťuje <strong>projekční služby a služby týkající se statického posouzení staveb</strong> v oboru pozemního stavitelství a dále jsme schopni zajistit <strong>investorsko–inženýrské služby</strong>.</p>
-    <p><strong>Záruční doba</strong> na námi provedená díla se pohybuje od 24 do 60 měsíců.</p>
-  </article>
-</main>
-<footer>
-  <h2>Plácneme si pro Váš projekt?</h2>
-  <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-  <a href="kontakt.html">Nezávazně poptat</a>
+    <div class="menu menu--hidden">
+      <a href="index.html" class="menu__item">Domů</a>
+      <a href="index.html" class="menu__item">Služby</a>
+      <a href="reference.html" class="menu__item">Reference</a>
+      <a href="onas.html" class="menu__item menu__item--active">O nás</a>
+      <a href="kontakt.html" class="menu__item">Kontakt</a>
+    </div>
+  </nav>
+</header>
+<section class="sidepage">
+  <p class="heading--2">O nás</p>
+  <p>Společnost <strong>HM Building.cz s.r.o.</strong> nabízí své <strong>služby ve stavebnictví od roku 2015</strong>, a to převážně <strong>po Libereckém kraji</strong>.</p>
+  <p>V oboru pozemního stavitelství <strong>provádíme stavbu a rekonstrukci</strong>:</p>
+  <ul class="about__list">
+    <li class="list--marker">průmyslových staveb</li>
+    <li class="list--marker">obytných staveb</li>
+    <li class="list--marker">staveb občanské vybavenosti</li>
+    <li class="list--marker">komunikací vozidlových, ale i pěších</li>
+  </ul>
+  <p>Zakázky můžeme řešit tzv. <strong>na klíč</strong>, kde jsme schopni zajistit dodávky a montáž elektro-instalace NN a VN, zdravotně – technické instalace, ústředního vytápění, vzduchotechniky, MaR, případně jsme schopni, po dohodě s investorem, dodat pouze některou ucelenou část celkové zakázky.</p>
+  <p>Naše firma taktéž zajišťuje <strong>projekční služby a služby týkající se statického posouzení staveb</strong> v oboru pozemního stavitelství a dále jsme schopni zajistit <strong>investorsko–inženýrské služby</strong>.</p>
+  <p><strong>Záruční doba</strong> na námi provedená díla se pohybuje od 24 do 60 měsíců.</p>
+</section>
+<footer class="footer">
+  <p class="footer__heading">Plácneme si pro Váš projekt?</p>
+  <p class="footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+  <div><a class="footer__button" href="kontakt.html">Nezávazně poptat</a></div>
 </footer>
 <script src="script/menu.js"></script>
 </body>
