@@ -11,8 +11,8 @@ html {
 
 p {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
+    font-size: .9em;
+    line-height: 1.3em;
     color: var(--text);
 }
 
@@ -329,4 +329,19 @@ p {
     margin-top: 1em;
     border: none;
     cursor: pointer;
+}
+
+.services__list {
+    padding-left: 1em;
+}
+
+.services__list__item {
+    font-size: .9em;
+    line-height: 1.3em;
+    font-weight: 400;
+    margin: .3em 0;
+}
+
+.services__list__item::marker {
+   color: var(--primary);
 }
