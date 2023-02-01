@@ -11,7 +11,7 @@
 <body>
 <header>
   <nav class="navigation background__white">
-    <img class="navigation__logo" src="../../images/logo.png" alt="Logo">
+    <a href="/"><img class="navigation__logo" src="../../images/logo.png" alt="Logo"></a>
     <div class="navigation__hamburger">
       <span>MENU</span>
       <div class="navigation__hamburger">
@@ -20,17 +20,31 @@
         <div class="hamburger--item hamburger__item--3"></div>
       </div>
     </div>
-    <div class="menu menu--hidden">
-      <a href="../../index.html" class="menu__item">Domů</a>
-      <a href="../../index.html" class="menu__item">Služby</a>
-      <a href="../reference.html" class="menu__item menu__item--active">Reference</a>
-      <a href="../onas.html" class="menu__item">O nás</a>
-      <a href="../kontakt.html" class="menu__item">Kontakt</a>
-    </div>
+    <menu class="menu menu--hidden">
+      <li class="menu__item"><a href="../../index.html">Domů</a></li>
+      <li class="menu__item"><a href="../../index.html">Služby</a></li>
+      <li class="menu__item menu__item--active"><a href="../reference.html">Reference</a></li>
+      <li class="menu__item"><a href="../onas.html">O nás</a></li>
+      <li class="menu__item"><a href="../kontakt.html">Kontakt</a></li>
+    </menu>
   </nav>
 </header>
+<section class="sidepage">
 <p class="heading--2">Průmyslové stavby</p>
 <p>Realizujeme <strong>průmyslové objekty ocelové konstrukce, lehké ocelové (stanového typu)</strong>, z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím se dostáváme na přijatelné ceny.</p>
+<ul>
+  <ul class="services__list">
+    <li class="services__list__item">zemní práce</li>
+    <li class="services__list__item">základové konstrukce</li>
+    <li class="services__list__item">průmyslové haly</li>
+    <li class="services__list__item--empty"><ul class="services__list">
+      <li class="services__list__item">ocelové</li>
+      <li class="services__list__item">ŽLB prefabrikované</li>
+      <li class="services__list__item">lehké ocelové (tzv. stanového typu)</li>
+    </ul></li>
+  </ul>
+</ul>
+</section>
 <footer class="footer">
   <p class="footer__heading">Plácneme si pro Váš projekt?</p>
   <p class="footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
