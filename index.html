@@ -5,66 +5,82 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HM Building.cz | Domov</title>
-  <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body class="grid">
   <header class="background__header">
     <nav class="navigation background__white">
       <a href="/"><img class="navigation__logo" src="./images/logo.png" alt="Logo"></a>
-      <div class="navigation__hamburger">
+      <div class="navigation__hamburger desktop--hidden">
         <span>MENU</span>
-        <div class="navigation__hamburger">
-          <div class="hamburger--item hamburger__item--1"></div>
-          <div class="hamburger--item hamburger__item--2"></div>
-          <div class="hamburger--item hamburger__item--3"></div>
-        </div>
+        <svg width="46" height="34" viewBox="0 0 46 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="46" height="8" fill="url(#paint0_linear_1606_386)"></rect>
+        <rect y="13" width="46" height="8" fill="url(#paint1_linear_1606_386)"></rect>
+        <rect y="26" width="46" height="8" fill="url(#paint2_linear_1606_386)"></rect>
+        <defs>
+          <linearGradient id="paint0_linear_1606_386" x1="1.71363e-07" y1="4" x2="46" y2="4" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#EB6C27"></stop>
+            <stop offset="1" stop-color="#FFBE9A"></stop>
+          </linearGradient>
+          <linearGradient id="paint1_linear_1606_386" x1="1.71363e-07" y1="17" x2="46" y2="17" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#EB6C27"></stop>
+            <stop offset="1" stop-color="#FFBE9A"></stop>
+          </linearGradient>
+          <linearGradient id="paint2_linear_1606_386" x1="1.71363e-07" y1="30" x2="46" y2="30" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#EB6C27"></stop>
+            <stop offset="1" stop-color="#FFBE9A"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
       </div>
-      <menu class="menu menu--hidden">
-        <li class="menu__item"><a href="index.html">Domů</a></li>
-        <li class="menu__item"><a href="index.html">Služby</a></li>
-        <li class="menu__item menu__item--active"><a href="./sites/reference.html">Reference</a></li>
-        <li class="menu__item"><a href="./sites/onas.html">O nás</a></li>
-        <li class="menu__item"><a href="./sites/kontakt.html">Kontakt</a></li>
+      <menu class="menu menu--hidden desktop--visible">
+        <li><a class="menu__item menu__item--active" href="index.html">Domů</a></li>
+        <li><a class="menu__item" href="index.html#services">Služby</a></li>
+        <li><a class="menu__item" href="./sites/reference.html">Reference</a></li>
+        <li><a class="menu__item" href="./sites/onas.html">O nás</a></li>
+        <li><a class="menu__item" href="./sites/kontakt.html">Kontakt</a></li>
       </menu>
     </nav>
     <div class="heading">
-      <h1 class="heading--1">HM Building.cz s.r.o. <span class="subheading">liberecká stavební společnost</span></h1>
+      <h1 class="heading--text">HM Building.cz s.r.o. <span class="subheading">liberecká stavební společnost</span></h1>
+      <a class="header__button" href="#services">pokračovat<svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.1079 10.1144L10.9902 8.99676L2.2325 0.0425196L0 2.29085L12.6667 14.9575L25.3333 2.29085L23.1008 0.0583534L14.3432 8.99676L12.6667 10.6732L12.1079 10.1144Z" fill="white"></path>
+    </svg></a>
     </div>
   </header>
-  <section class="grid padding--1">
-    <article>
-      <p class="heading--2">Využijte škálu našich <span class="orange">služeb</span></p>
+  <section id="services" class="grid padding--1">
+    <article class="grid__main">
+      <p class="grid__main__heading">Využijte škálu našich <span class="orange">služeb</span></p>
       <p>Ačkoliv provádíme především <strong>průmyslové stavby</strong>, není pro nás problém postavit Vám <strong>rodinný domek na klíč</strong>, nebo jen hrubou stavbu. Nejsou nám cizí ani <strong>rekonstrukce budov</strong> a jejich údržba a to včetně okolních ploch.</p>
     </article>
-    <article>
+    <article class="service">
       <img src="./images/sluzba-novostavby-1200w.jpg" alt="Novostavby" class="article__image img__radius--right">
-      <div>
+      <div class="article__text">
         <p class="heading--2">Novostavby</p>
         <p>Dle požadavků investora jsme schopní dodat <strong>kompletní stavbu na klíč</strong>, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.</p>
         <p>Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
         <a href="sites/services/novostavby.html" class="article__button">Zobrazit vice</a>
       </div>
     </article>
-    <article>
+    <article class="service service--right">
       <img src="./images/sluzba-prumyslove-stavby-1920w.jpg" alt="Průmyslové stavby" class="article__image img__radius--left">
-      <div>
+      <div class="article__text">
         <p class="heading--2">Průmyslové stavby</p>
         <p>Realizujeme <strong>průmyslové objekty ocelové konstrukce</strong>, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím se <strong>dostáváme na přijatelné ceny</strong>.</p>
         <a href="sites/services/prumyslove.html" class="article__button">Zobrazit vice</a>
       </div>
     </article>
-    <article>
+    <article class="service">
       <img src="./images/sluzba-rekonstrukce-1920w.jpg" alt="Rekonstrukce domů a jiných staveb" class="article__image img__radius--right">
-      <div>
+      <div class="article__text">
         <p class="heading--2">Rekonstrukce domů a jiných staveb</p>
         <p>Provádíme veškeré práce spojené s <strong>rekonstrukcí stávajících objektů</strong>. Pro naše klienty zajišťujeme dodatečné izolování objektů, <strong>zateplení objektů</strong>, změnu vnitřních i vnějších dispozic stávajících objektů a demolice stávajících staveb. </p>
         <a href="sites/services/rekonstrukce.html" class="article__button">Zobrazit vice</a>
       </div>
     </article>
-    <article>
+    <article class="service service--right">
       <img src="./images/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg" alt="Komunikace a zpevněné plochy" class="article__image img__radius--left">
-      <div>
+      <div class="article__text">
         <p class="heading--2">Komunikace a zpevněné plochy</p>
         <p>Komunikace a zpevněné plochy provádíme včetně <strong>zemních prací, konstrukcí podkladních</strong> a souvisejících objektů, jako jsou <strong>odvodnění, zpevnění svahů, opěrné zdi</strong> atd.</p>
         <a href="sites/services/komunikace.html" class="article__button">Zobrazit vice</a>
@@ -77,33 +93,33 @@
     <a href="sites/kontakt.html" class="construction__button">Přesvědčit se</a>
   </div>
   <section class="grid padding--1">
-    <article>
-      <div>
-        <p class="heading--2">Rádi vám ukážeme naše <span class="orange">reference</span></p>
-        <p>Stojí za námi <strong>kvalitně vyhotovené zakázky</strong> dle konkrétních požadavků zadavatelů <strong>podepřené letitými zkušenostmi ve stavebnictví</strong>. To, že <strong>obrátit se na právě nás je vhodná volba potvrdí naši klienti</strong>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
-      </div>
+    <article class="grid__main">
+      <p class="grid__main__heading">Rádi vám ukážeme naše <span class="orange">reference</span></p>
+      <p>Stojí za námi <strong>kvalitně vyhotovené zakázky</strong> dle konkrétních požadavků zadavatelů <strong>podepřené letitými zkušenostmi ve stavebnictví</strong>. To, že <strong>obrátit se na právě nás je vhodná volba potvrdí naši klienti</strong>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
     </article>
-    <a href="./sites/references/zbrojnice.html" class="reference">
-      <img src="./images/reference/reference-hasicska-zbrojnice-600w.jpg" alt="Hasičská zbrojnice" class="reference__image">
-      <div>
-        <p class="reference__heading">Hasičská zbrojnice</p>
-        <p class="reference__text">celková rekonstrukce</p>
-      </div>
-    </a>
-    <a href="./sites/references/pradelna.html" class="reference">
-      <img src="./images/reference/reference-pradelna-600w.jpg" alt="Samoobslužná prádelna" class="reference__image">
-      <div>
-        <p  class="reference__heading">Samoobslužná prádelna</p>
-        <p class="reference__text">stavební úpravy a opravy</p>
-      </div>
-    </a>
-    <a href="./sites/references/plochy.html" class="reference">
-      <img src="./images/reference/reference-plocha-600w.jpg" alt="Venkovní plochy Restyl" class="reference__image">
-      <div>
-        <p class="reference__heading">Venkovní plochy Restyl</p>
-        <p class="reference__text">provedení venkovnách ploch</p>
-      </div>
-    </a>
+    <div class="reference__images">
+      <a href="./sites/references/zbrojnice.html" class="reference">
+        <img src="./images/reference/reference-hasicska-zbrojnice-600w.jpg" alt="Hasičská zbrojnice" class="reference__image">
+        <div class="reference__info">
+          <p class="reference__heading">Hasičská zbrojnice</p>
+          <p class="reference__text">celková rekonstrukce</p>
+        </div>
+      </a>
+      <a href="./sites/references/pradelna.html" class="reference">
+        <img src="./images/reference/reference-pradelna-600w.jpg" alt="Samoobslužná prádelna" class="reference__image">
+        <div class="reference__info">
+          <p  class="reference__heading">Samoobslužná prádelna</p>
+          <p class="reference__text">stavební úpravy a opravy</p>
+        </div>
+      </a>
+      <a href="./sites/references/plochy.html" class="reference">
+        <img src="./images/reference/reference-plocha-600w.jpg" alt="Venkovní plochy Restyl" class="reference__image">
+        <div class="reference__info">
+          <p class="reference__heading">Venkovní plochy Restyl</p>
+          <p class="reference__text">provedení venkovnách ploch</p>
+        </div>
+      </a>
+    </div>
     <div class="reference__button--align">
       <a href="sites/reference.html" class="reference__button">Více referencí</a>
     </div>
