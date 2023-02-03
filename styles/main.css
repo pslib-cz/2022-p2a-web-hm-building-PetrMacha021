@@ -1,11 +1,11 @@
-@layer normalize, mobile, tablet, desktop, largedesktop;
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
-@import "normalize.css" layer(normalize);
 @import "mobile.css" layer(mobile);
 @import "tablet.css" layer(tablet);
 @import "desktop.css" layer(desktop);
 @import "largedesktop.css" layer(largedesktop);
+@import "normalize.css" layer(normalize);
+
+@layer normalize, mobile, tablet, desktop, largedesktop;
 
 html {
     font-family: 'Open Sans', sans-serif;

@@ -13,10 +13,15 @@ p {
     height: 100%;
 }
 
-.background__header {
+.header__main {
     background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url(../images/pageheader-1920w.jpg) center / cover;
     background-blend-mode: normal, normal, hue, normal;
     height: 32em;
+}
+
+.background__header {
+    background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url(../images/pageheader-1920w.jpg) center / cover;
+    background-blend-mode: normal, normal, hue, normal;
 }
 
 .header__button {

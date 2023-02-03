@@ -1,7 +1,11 @@
 @media (min-width: 1024px) {
     .background__header {
         padding-bottom: 5.25em;
-        min-height: calc(100vh - 5.25em);
+        height: 15vh;
+    }
+
+    .header__main {
+        height: 100vh;
     }
 
     .background__header--sidepage {
@@ -161,5 +165,13 @@
 
     .heading__subtext {
         text-align: center;
+    }
+
+    .services__list {
+        margin-left: 2em;
+    }
+
+    .footer__button {
+        background: white;
     }
 }
