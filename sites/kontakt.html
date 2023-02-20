@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HM Building.cz | Kontakt</title>
-  <link rel="stylesheet" href="../styles/normalize.css">
+  <title>Kontakty | HM Building.cz</title>
   <link rel="stylesheet" href="../styles/main.css">
+  <script src="../script/menu.js"></script>
 </head>
 <body>
-<header class="background__header background__header--sidepage">
-  <nav class="navigation background__white">
-    <a href="../index.html"><img class="navigation__logo" src="../images/logo.png" alt="Logo"></a>
+<div class="page">
+<header class="header__side background__header">
+  <nav class="navigation">
+    <a href="../index.html" class="navigation__logo"><img class="navigation__logo--img" src="../images/logo.png" alt="Logo"></a>
     <div class="navigation__hamburger desktop--hidden">
       <span>MENU</span>
       <svg width="46" height="34" viewBox="0 0 46 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,16 +36,16 @@
       </svg>
     </div>
     <menu class="menu menu--hidden desktop--visible">
-      <li><a class="menu__item" href="../index.html">Domů</a></li>
-      <li><a class="menu__item" href="../index.html#services">Služby</a></li>
-      <li><a class="menu__item" href="reference.html">Reference</a></li>
-      <li><a class="menu__item" href="onas.html">O nás</a></li>
-      <li><a class="menu__item menu__item--active" href="kontakt.html">Kontakt</a></li>
+      <li class="menu__item"><a class="menu__item--content" href="../index.html">Domů</a></li>
+      <li class="menu__item"><a class="menu__item--content" href="../index.html#services">Služby</a></li>
+      <li class="menu__item"><a class="menu__item--content" href="../sites/reference.html">Reference</a></li>
+      <li class="menu__item"><a class="menu__item--content" href="../sites/onas.html">O nás</a></li>
+      <li class="menu__item menu__item--active"><a class="menu__item--content" href="../sites/kontakt.html">Kontakt</a></li>
     </menu>
   </nav>
 </header>
-<section class="sidepage">
-  <p class="heading--2">Kontaktujte nás</p>
+<div class="sidepage limit--page">
+  <p class="sidepage__heading">Kontaktujte nás</p>
   <p class="heading__subtext" >Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
   <div class="contacts">
     <ul class="information">
@@ -52,41 +53,41 @@
       <li><i class="information__icon"><img alt="email" src="../images/icons/mail.svg"></i><a class="information__email information__text" href="mailto:stavby@hm-building.cz">stavby@hm-building.cz</a></li>
       <li><i class="information__icon"><img alt="location" src="../images/icons/location.svg"></i><a class="information__address information__text" href="https://www.google.com/maps/place/K%C5%99i%C5%BEansk%C3%A1+12,+Horn%C3%AD+Such%C3%A1,+460+10+Liberec/@50.7600366,15.0014291,17z/data=!4m5!3m4!1s0x470936fe7ea6ccbb:0x362ba2cad58e444!8m2!3d50.760661!4d15.0022228?hl=cs-CZ">Křižanská 12, Liberec XXII-Horní Suchá</a></li>
     </ul>
-    <img src="../images/mapa.jpg" alt="mapa" class="image__address">
+    <a class="image__address" href="https://mapy.cz/zakladni?q=K%C5%99i%C5%BEansk%C3%A1%2012%2C%20Liberec%20XXII-Horn%C3%AD%20Such%C3%A1&source=addr&id=9085775&ds=1&x=15.0022034&y=50.7607286&z=17"><img class="img--responsive" src="../images/mapa.jpg" alt="mapa"></a>
   </div>
   <div class="contants__form">
     <p class="heading--3">Nezávazná poptávka služeb</p>
     <p>Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
     <form>
-      <label class="form__item">
+      <label for="name" class="form__item">
         Jméno a příjmení
-        <input type="text" class="item__input">
+        <input id="name" type="text" class="item__input">
       </label>
-      <label class="form__item">
+      <label for="email" class="form__item">
         E-mail
-        <input type="text" class="item__input">
+        <input id="email" type="text" class="item__input">
       </label>
-      <label class="form__item">
+      <label for="phone" class="form__item">
         Telefon
-        <input type="text" class="item__input">
+        <input id="phone" type="text" class="item__input">
       </label>
-      <label class="form__item">
+      <label for="type" class="form__item">
         Poptávaná služba
-        <select class="item__input">
+        <select id="type" class="item__input">
           <option value="novostavba">Novostavba</option>
           <option value="prumyslova">Průmyslova stavba</option>
           <option value="rekonstrukce">Rekonstrukce domů a jiných staveb</option>
           <option value="komunikaceaplochy">Komunikace a zpevněné plochy</option>
         </select>
       </label>
-      <label class="form__item">
+      <label for="note" class="form__item">
         Poznámka
-        <input type="text" class="item__input item__input--note">
+        <input id="note" type="text" class="item__input item__input--note">
       </label>
       <button type="submit" class="form__submit">Odeslat nezávaznou poptávku</button>
     </form>
   </div>
-</section>
-<script src="../script/menu.js"></script>
+</div>
+</div>
 </body>
 </html>
