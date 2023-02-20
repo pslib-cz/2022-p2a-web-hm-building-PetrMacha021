@@ -1,18 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "normalize.css" layer(normalize);
 @import "mobile.css" layer(mobile);
 @import "tablet.css" layer(tablet);
 @import "desktop.css" layer(desktop);
 @import "largedesktop.css" layer(largedesktop);
-@import "normalize.css" layer(normalize);
 
 @layer normalize, mobile, tablet, desktop, largedesktop;
 
-html {
-    font-family: 'Open Sans', sans-serif;
+:root {
     --primary: #EB6C27;
     --text: #3A3A3A;
     --background: #FFFFFF;
     --text--gray: #888888;
-    background: var(--background);
 }
 
+html {
+    font-family: 'Open Sans', sans-serif;
+    background: var(--background);
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+}
